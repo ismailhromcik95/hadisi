@@ -1,0 +1,920 @@
+/*FONTS*/
+
+/*Banner Font*/
+@font-face {
+  font-family: 'Menjelajah Halmahera';
+  src: url('../fonts/MenjelajahHalmahera-YvZa.ttf');
+}
+
+/*Josefin Sans*/
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansThin-DOL1x.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansThinItalic-ALGeD.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansLight-ZVEll.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansLightItalic-3zaKy.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansRegular-x3LYV.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansSemibold-p7Z0v.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansBold-OVA7o.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/JosefinSansBoldItalic-EaJRg.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*IBM Plex Sans Arabic*/
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../fonts/IBMPlexSansArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Noto Emoji*/
+@font-face {
+  font-family: "Noto Emoji";
+  src: url("../fonts/NotoEmoji-VariableFont_wght.ttf") format("truetype");
+}
+
+/*Noto Nastaliq Urdu*/
+@font-face {
+  font-family: "Noto Nastaliq Urdu";
+  src: url("../fonts/NotoNastaliqUrdu-VariableFont_wght.ttf") format("truetype");
+}
+
+/*Noto Sans Bengali*/
+@font-face {
+  font-family: "Noto Sans Bengali";
+  src: url("../fonts/NotoSansBengali-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+/*Amiri Quran*/
+@font-face {
+  font-family: "Amiri Quran";
+  src: url("../fonts/AmiriQuran-Regular.ttf") format("truetype");
+}
+
+/*VARIABLES*/
+
+:root {
+  --font-scale: 1;
+
+  --mini-font-size: calc(10.5px * var(--font-scale));
+  --base-font-size: calc(14.5px * var(--font-scale));
+  --bigger-font-size: calc(15.5px * var(--font-scale));
+  --arabic-font-size: calc(16.5px * var(--font-scale));
+  --title-font-size: calc(18px * var(--font-scale));
+}
+
+[data-theme="dark"] {
+	--bg-color: #0a0a0a;
+	--txt-color: #fff;
+	--link-color: #0ff;
+	--header-bg: #0a0a0a;
+	--popup-bg: rgba(0,0,0,0.85);
+	--element-bg: none;
+	--element-txt: #0ff;
+	--element-hover: none;
+	--title-color: #fff;
+	--prevod-style: normal;
+	--prevod-weight: normal;
+	--logo-opacity: 1;
+	--sahih: #0f0;
+	--hasen: #03f;
+	--daif: #f00;
+	--ocjena-weight: normal;
+	--btn-shadow: 5px rgba(255,255,255,0.3);
+}
+
+[data-theme="light"] {
+	--bg-color: #f0f0ff;
+	--txt-color: #000;
+	--link-color: #006;
+	--header-bg: #ddf;
+	--popup-bg: rgba(250,250,250,0.85);
+	--element-bg: #006;
+	--element-txt: #fff;
+	--element-hover: #338;
+	--title-color: #006;
+	--prevod-style: italic;
+	--prevod-weight: bold;
+	--logo-opacity: 0.75;
+	--sahih: #050;
+	--hasen: #00a;
+	--daif: #500;
+	--ocjena-weight: bold;
+	--btn-shadow: 2px rgba(0,0,0,0.`5);
+}
+
+/*REST*/
+
+body {
+	background: var(--bg-color);
+	color: var(--txt-color);
+	font-family: 'Josefin Sans', serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-size: var(--base-font-size);
+}
+
+a, h1 {
+	color: var(--link-color);
+}
+
+header {
+	padding: 30px 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #333;
+	background: var(--header-bg);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+header a,
+footer a,
+.broj-cont a,
+.popup a,
+.toggle-label:hover u,
+.ocjene a,
+.crumbs a,
+.prevod a:hover,
+main h4 a:hover,
+main .bio a:hover,
+h5 a {
+	text-decoration: none;
+}
+
+header h1 {
+	font-size: 80px;
+	line-height: 60px;
+	font-weight: 200;
+	font-family: 'Menjelajah Halmahera', serif;
+	margin-bottom: -25px;
+}
+
+header .icons {
+	display: flex;
+	gap: 15px;
+}
+
+header .search {
+	display: flex;
+	align-items: center;
+}
+
+header .search svg {
+	cursor: pointer;
+}
+
+header svg {
+	width: 40px;
+	height: 40px;
+}
+
+header .settings svg, header .search svg {
+	width: 30px;
+	height: 30px;
+}
+
+main .info svg {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+}
+
+header path, .info path {
+	fill: var(--link-color);
+}
+
+header .logo:hover path, .info:hover path {
+	fill: var(--title-color);
+}
+
+header .logo:hover h1 {
+	color: var(--title-color);
+}
+
+h2 {
+	text-align: center;
+	font-size: var(--title-font-size);
+	margin-top: 20px;
+	color: var(--link-color);
+}
+
+h2 .arapski {
+	font-size: 20px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo:hover {
+	opacity: var(--logo-opacity);
+}
+
+.settings {
+	cursor: pointer;
+}
+
+.settings:hover, .search svg:hover {
+	opacity: var(--logo-opacity);
+}
+
+.settings path, .search path {
+	fill: var(--link-color);
+}
+
+.settings:hover path, .search svg:hover path {
+	fill: var(--title-color);
+}
+
+#search {
+	background: var(--popup-bg);
+	border: 1px solid var(--link-color);
+	color: var(--txt-color);
+	font-size: var(--base-font-size);
+	margin-right: 15px;
+	min-height: 30px;
+	min-width: 200px;
+	padding: 0 5px;
+	animation: slideFromRight 0.4s ease forwards;
+}
+
+#search:focus {
+	outline: none;
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.popup {
+	position: fixed;
+	top: 105px;
+	right: 0;
+	width: 350px;
+	height: fit-content;
+	max-height: 500px;
+	overflow-y: auto;
+	border: 1px solid var(--link-color);
+	background: var(--popup-bg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: var(--bigger-font-size);
+	gap: 10px;
+	padding: 20px;
+	z-index: 100;
+}
+
+.popup h3 {
+	color: var(--title-color);
+	margin-bottom: 10px;
+}
+
+.popup .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup .left, .popup .right {
+	width: 50%;
+}
+
+.popup details {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.popup summary {
+	text-align: center;
+	cursor: pointer;
+}
+
+.sv-tema, .tm-tema, #reset, #random {
+	color: var(--element-txt);
+	background: var(--element-bg);
+	border: 1px solid var(--link-color);
+	padding: 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sv-tema:hover, .tm-tema:hover, #reset:hover, #random:hover {
+	color: #fff;
+	border-color: var(--txt-color);
+	background: var(--element-hover);
+}
+
+#reset {
+	font-size: var(--base-font-size);
+	margin-bottom: 20px;
+}
+
+#reset:active {
+	margin: 1.5px 1.5px -1.5px -1.5px;
+}
+
+#random {
+	margin-top: 70px;
+	font-size: var(--base-font-size);
+}
+
+#random .emoji {
+	margin-right: 2px;
+}
+
+.tema, .velicina-slova {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.tema > *, .velicina-slova > * {
+	flex: 1;
+}
+
+.velicina-slova .slider {
+	accent-color: var(--link-color);
+	cursor: pointer;
+}
+
+.jezici {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.jezici p {
+	font-size: var(--base-font-size);
+}
+
+.jezici .jezik {
+	margin-top: 15px;
+}
+
+.jezici .jezik.ur {
+	margin-top: 7.5px;
+}
+
+.collections {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+	width: 100%;
+}
+
+.collections a {
+	width: 560px;
+}
+
+.collections button {
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	border: 1px solid var(--link-color);
+	color: var(--element-txt);
+	background: var(--element-bg);
+	border-radius: 5px;
+	font-size: var(--arabic-font-size);
+	width: calc(100% - 20px);
+	font-family: 'Josefin Sans', serif;
+}
+
+.collections a:hover button {
+	border-color: var(--txt-color);
+	color: #fff;
+	background: var(--element-hover);
+}
+
+.hadis-dana-cont {
+	border: 1px solid var(--link-color);
+	border-radius: 10px;
+	margin-top: 50px;
+	background: var(--element-bg);
+	color: #fff;
+	position: relative;
+}
+
+.hadis-dana-cont h3,
+.hadis-dana-cont a {
+	color: var(--element-txt);
+}
+
+.hadis-dana-cont h3 {
+	font-size: var(--arabic-font-size);
+	margin-top: 20px;
+	text-align: center;
+}
+
+.arapski, .saws, .jj {
+	direction: rtl;
+	font-family: 'IBM Plex Sans Arabic', serif;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	flex: 1;
+	margin-top: 105px;
+}
+
+main h4 {
+	font-size: var(--arabic-font-size);
+	margin: 10px 0;
+	text-align: center;
+}
+
+main .hadith {
+	margin: 20px;
+	max-width: 1000px;
+	line-height: 1.9;
+	border-bottom: 1px solid #333;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+main .hadith:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+main .hadis-dana .hadith {
+	width: 500px;
+	margin-top: 10px;
+}
+
+main .hadith-text {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+main .hadith-text .quran {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+main .hadis-dana .hadith-text {
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+main .arapski {
+	font-size: var(--arabic-font-size);
+	width: 47%;
+}
+
+main .hadis-dana .arapski {
+	width: auto;
+}
+
+main .prevod {
+	flex: 1;
+}
+
+main .prevod .arapski,
+main .prevod .saws {
+	font-size: var(--mini-font-size);
+}
+
+main .prevod b,
+main .hadis-dana .prevod {
+	font-style: var(--prevod-style);
+}
+
+main .hadis-dana .prevod {
+	font-weight: var(--prevod-weight);
+}
+
+main .ocjena {
+	text-align: center;
+	margin: 50px;
+}
+
+main .sahih {
+	color: var(--sahih);
+	font-weight: var(--ocjena-weight);
+}
+
+main .hasen {
+	color: var(--hasen);
+	font-weight: var(--ocjena-weight);
+}
+
+main .daif {
+	color: var(--daif);
+	font-weight: var(--ocjena-weight);
+}
+
+main .sahih .ocjene, main .hasen .ocjene, main .daif .ocjene {
+	color: var(--txt-color);
+}
+
+main .bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+main .share-btns {
+	display: flex;
+	gap: 5px;
+}
+
+main .copy, main .share {
+	cursor: pointer;
+	color: var(--link-color);
+	height: fit-content;
+}
+
+main .copy:hover, main .share:hover {
+	opacity: 0.8;
+}
+
+main .hadis-dana-cont .copy, main .hadis-dana-cont .share {
+	color: var(--element-txt);
+}
+
+main .o_nama, main .bio {
+	max-width: 1000px;
+	line-height: 20px;
+	font-size: var(--bigger-font-size);
+	text-align: justify;
+	margin: 0 50px;
+	margin-bottom: 20px;
+}
+
+main .bio {
+	max-width: 900px;
+}
+
+main .o_nama h2 {
+	font-size: var(--arabic-font-size);
+	margin-bottom: 15px;
+}
+
+main .o_nama p,
+main .o_nama h3 {
+	margin-bottom: 10px;
+}
+
+main .o_nama h3 {
+	margin-top: 35px;
+}
+
+main h5 {
+	font-size: 35px;
+	margin: 5px;
+}
+
+main .o_nama p.arapski {
+	width: 100%;
+	text-align: center;
+}
+
+main .bio h4 {
+	margin-bottom: 15px;
+	margin-top: 45px;
+}
+
+main .bio > h4:first-child {
+  margin-top: 15px;
+}
+
+main .bio .arapski {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.ajet {
+	margin: 10px 0;
+}
+
+.crumbs {
+	position: fixed;
+	top: 105px;
+	left: 15px;
+	padding: 10px;
+	background: var(--bg-color);
+	z-index: 100;
+}
+
+.crumbs a {
+	margin: 0 3px;
+}
+
+.toggle {
+  display: none;
+}
+
+.ocjene {
+  display: none;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.toggle:checked ~ .ocjene {
+  display: block;
+}
+
+.toggle-label.show {
+  cursor: pointer;
+}
+
+.toggle ~ .toggle-label.hide,
+.toggle:checked ~ .toggle-label.show {
+  display: none;
+}
+
+.toggle-label.hide {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle ~ .toggle-label.show,
+.toggle:checked ~ .toggle-label.hide{
+  display: inline-block;
+}
+
+footer {
+	width: 100%;
+	color: var(--txt-color);
+	text-align: center;
+	padding: 20px;
+}
+
+footer a:hover,
+.broj-cont a:hover,
+.popup a:hover,
+.toggle-label u,
+.ocjene a:hover,
+.crumbs a:hover,
+h5 a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	margin-bottom: 5px;
+}
+
+.ismile {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.socials svg {
+	height: 15px;
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	stroke-linejoin: round;
+	stroke-miterlimit: 2;
+}
+
+.socials path {
+	fill-rule: nonzero;
+	fill: var(--link-color);
+}
+
+.socials svg:hover {
+	opacity: var(--logo-opacity);
+}
+
+.socials svg:hover path {
+	fill: var(--title-color);
+}
+
+.socials path.dot {
+	fill: var(--txt-color);
+}
+
+.emoji {
+	font-family: "Noto Emoji", sans-serif;
+	font-weight: 900;
+}
+
+.quran {
+	font-family: "Amiri Quran", sans-serif;
+	font-size: var(--arabic-font-size);
+}
+
+.urdu {
+	font-family: "Noto Nastaliq Urdu", sans-serif;
+	font-size: var(--arabic-font-size);
+}
+
+.bangla {
+	font-family: "Noto Sans Bengali", sans-serif;
+}
+
+.big {
+	font-size: var(--arabic-font-size);
+}
+
+.smaller {
+	font-size: var(--bigger-font-size) !important;
+}
+
+.mini {
+	font-size: var(--mini-font-size) !important;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+.dash {
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+/*RESPONSIVE DESIGN - WIDTH*/
+
+@media only screen and (max-width: 750px) {
+	main .hadith-text {
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	main .arapski, main .prevod {
+		width: 90%;
+	}
+
+	main .ocjene p {
+		margin: 10px 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header {
+		padding: 30px 25px;
+	}
+
+	.collections a,
+	.hadis-dana-cont {
+		width: calc(100% - 50px);
+	}
+
+	.collections button {
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	main .hadith-text {
+		flex-direction: column;
+	}
+
+	main .hadis-dana .hadith {
+		width: calc(100% - 40px);		
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+	header .logo h1 {
+		font-size: 60px;
+		line-height: 40px;
+	}
+
+	main .o_nama {
+		margin: 10px 40px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.popup {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.tema, .velicina-slova {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header .logo h1 {
+		display: none;
+	}
+}
+
+
+/*RESPONSIVE DESIGN HEIGHT*/
+
+@media only screen and (max-height: 400px) {
+	.popup {
+		height: calc(100vh - 110px);
+	}
+}
