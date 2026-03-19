@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     text += wrapper.querySelector(".arapski")?.innerText.trim() + "\n\n" || "";
     text += wrapper.querySelector(".prevod")?.innerText.trim() + "\n\n" || "";
 
-    const link = `https://hadisi.net/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
+    const link = `https://ismailhromcik95.github.io/hadisi/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
     text += link;
 
     navigator.clipboard.writeText(text)
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const shareButton = wrapper.querySelector(".share");
   shareButton?.addEventListener("click", () => {
 
-    const link = `https://hadisi.net/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
+    const link = `https://ismailhromcik95.github.io/hadisi/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
 
     navigator.clipboard.writeText(link)
       .then(() => alert("Link hadisa kopiran uspješno!\n\n" + link))
