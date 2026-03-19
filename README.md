@@ -1,3 +1,3 @@
-# Hadisi na bosanskom jeziku
+# Hadisi na bosanskom
 
-Open-source web-sajt i aplikacija sa hadisima na bosanskom.
+Open-source web-sajt i aplikacija sa hadisima Allahovog Poslanika ﷺ na bosanskom jeziku.
