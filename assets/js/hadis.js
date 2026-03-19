@@ -277,7 +277,7 @@ try {
     const wrapper = document.createElement("div");
     wrapper.className = "hadith";
 
-    const shareLink = `https://hadisi.net/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
+    const shareLink = `https://ismailhromcik95.github.io/hadisi/hadis.html?${hadith.zbirka.toLowerCase()}=${hadith.broj}`;
     wrapper.dataset.link = shareLink;
 
     wrapper.innerHTML = `
@@ -375,7 +375,7 @@ try {
     }
 
     const zbirkaParam = hadith.zbirka.toLowerCase();
-    const link = `https://hadisi.net/hadis.html?${zbirkaParam}=${hadith.broj}`;
+    const link = `https://ismailhromcik95.github.io/hadisi/hadis.html?${zbirkaParam}=${hadith.broj}`;
     text += link;
 
     navigator.clipboard.writeText(text)
