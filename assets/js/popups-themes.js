@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const query = searchInput.value.trim();
       if (query) {
-        window.location.href = `hadis.html?search=${encodeURIComponent(query)}`;
+        window.location.href = `https://ismailhromcik95.github.io/hadisi/hadis.html?search=${encodeURIComponent(query)}`;
       }
     }
   });
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleSearch() {
     const query = document.getElementById("search").value.trim();
     if (query.length > 2) {
-      window.location.href = `hadis.html?search=${encodeURIComponent(query)}`;
+      window.location.href = `https://ismailhromcik95.github.io/hadisi/hadis.html?search=${encodeURIComponent(query)}`;
     }
   }
 
