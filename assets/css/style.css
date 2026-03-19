@@ -843,6 +843,19 @@ i {
 /*RESPONSIVE DESIGN - WIDTH*/
 
 @media only screen and (max-width: 750px) {
+
+	main {
+		margin-top: 130px;
+	}
+
+	main h2 {
+		margin: 0 20px;
+	}
+
+	main .hadith {
+		margin: 20px 10px;
+	}
+
 	main .hadith-text {
 		flex-direction: column;
 		margin-top: 30px;
@@ -854,6 +867,14 @@ i {
 
 	main .ocjene p {
 		margin: 10px 0;
+	}
+
+	.hadis-dana-cont {
+		margin-top: 30px;
+	}
+
+	#random {
+		margin-top: 50px;
 	}
 }
 
@@ -882,6 +903,12 @@ i {
 
 }
 
+@media only screen and (max-width: 466px) {
+	main {
+		margin-top: 175px;
+	}
+}
+
 @media only screen and (max-width: 450px) {
 	header .logo h1 {
 		font-size: 60px;
@@ -890,6 +917,10 @@ i {
 
 	main .o_nama {
 		margin: 10px 40px;
+	}
+
+	main {
+		margin-top: 140px;
 	}
 }
 
