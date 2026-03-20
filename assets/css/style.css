@@ -259,11 +259,19 @@ main .info svg {
 	margin: 10px;
 }
 
-header path, .info path {
+main svg.random-icon {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 9.5px;
+	left: 14px;
+}
+
+header path, .info path, .random-icon path {
 	fill: var(--link-color);
 }
 
-header .logo:hover path, .info:hover path {
+header .logo:hover path, .info:hover path, #random:hover .random-icon path {
 	fill: var(--title-color);
 }
 
@@ -406,6 +414,8 @@ h2 .arapski {
 #random {
 	margin-top: 70px;
 	font-size: var(--base-font-size);
+	position: relative;
+	padding-left: 35px;
 }
 
 #random .emoji {
