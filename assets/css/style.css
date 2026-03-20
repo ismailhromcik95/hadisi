@@ -876,10 +876,6 @@ i {
 	#random {
 		margin-top: 50px;
 	}
-
-	.crumbs {
-		top: 106px;
-	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -908,12 +904,6 @@ i {
 }
 
 @media only screen and (max-width: 466px) {
-	main {
-		margin-top: 175px;
-	}
-}
-
-@media only screen and (max-width: 450px) {
 	header .logo h1 {
 		font-size: 60px;
 		line-height: 40px;
@@ -925,6 +915,12 @@ i {
 
 	main {
 		margin-top: 140px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.crumbs {
+		top: 116px;
 	}
 }
 
