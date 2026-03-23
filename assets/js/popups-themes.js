@@ -141,4 +141,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  let deferredPrompt;
+  const installBtn = document.getElementById("install");
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+
+    deferredPrompt = e;
+
+    installBtn.style.display = "block";
+  });
+
+  installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log("Install result:", outcome);
+
+    deferredPrompt = null;
+    installBtn.style.display = "none";
+  });
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(() => console.log("Service Worker registered"))
+      .catch(err => console.log("SW error:", err));
+  }
+
 });
