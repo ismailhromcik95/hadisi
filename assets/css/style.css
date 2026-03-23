@@ -360,6 +360,7 @@ h2 .arapski {
 	gap: 10px;
 	padding: 20px;
 	z-index: 100;
+	scrollbar-color: var(--link-color) var(--bg-color);
 }
 
 .popup h3 {
@@ -379,7 +380,7 @@ h2 .arapski {
 
 .popup details {
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .popup summary {
@@ -387,7 +388,7 @@ h2 .arapski {
 	cursor: pointer;
 }
 
-.sv-tema, .tm-tema, #reset, #random {
+.sv-tema, .tm-tema, #reset, #random, #install {
 	color: var(--element-txt);
 	background: var(--element-bg);
 	border: 1px solid var(--link-color);
@@ -396,19 +397,24 @@ h2 .arapski {
 	cursor: pointer;
 }
 
-.sv-tema:hover, .tm-tema:hover, #reset:hover, #random:hover {
+.sv-tema:hover, .tm-tema:hover, #reset:hover, #random:hover, #install:hover {
 	color: #fff;
 	border-color: var(--txt-color);
 	background: var(--element-hover);
 }
 
-#reset {
+#reset, #install {
 	font-size: var(--base-font-size);
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
-#reset:active {
-	margin: 1.5px 1.5px -1.5px -1.5px;
+#reset:active, #install:active {
+	opacity: 0.85;
+}
+
+#install {
+	margin-bottom: 10px;
+	display: none;
 }
 
 #random {
