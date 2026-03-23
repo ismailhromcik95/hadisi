@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const bMatch = h.prevod?.match(/<b>(.*?)<\/b>/i);
         const text = bMatch ? bMatch[1] : "";
 
-        if (text.length > 150) return false;
+        if (text.length > 100) return false;
 
         const broj = h.broj?.toString().trim();
 
