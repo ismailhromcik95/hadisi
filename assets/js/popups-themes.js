@@ -144,13 +144,29 @@ document.addEventListener("DOMContentLoaded", () => {
   let deferredPrompt;
   const installBtn = document.getElementById("install");
 
-  window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
+  console.log("Install button element:", installBtn);
 
+  window.addEventListener("beforeinstallprompt", (e) => {
+    console.log("beforeinstallprompt fired!");
+    
+    e.preventDefault();
     deferredPrompt = e;
 
-    installBtn.style.display = "block";
+    if (installBtn) {
+      installBtn.style.display = "block";
+      console.log("Install button shown");
+    } else {
+      console.log("Install button NOT found in DOM");
+    }
   });
+
+  window.addEventListener("appinstalled", () => {
+    console.log("App was installed");
+  });
+
+  console.log("Is HTTPS:", location.protocol === "https:");
+  console.log("ServiceWorker supported:", "serviceWorker" in navigator);
+  console.log("Standalone mode:", window.matchMedia('(display-mode: standalone)').matches);
 
   installBtn.addEventListener("click", async () => {
     if (!deferredPrompt) return;
