@@ -858,7 +858,7 @@ i {
 
 /*RESPONSIVE DESIGN - WIDTH*/
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 771px) {
 
 	main {
 		margin-top: 130px;
@@ -919,7 +919,39 @@ i {
 
 }
 
+@media only screen and (max-width: 550px) {
+	@keyframes fadeIn {
+	  from {
+	    opacity: 0;
+	  }
+	  to {
+	    opacity: 1;
+	  }
+	}
+
+	#search {
+		position: absolute;
+		top: 50%;
+		left: 80px;
+  	transform: translate(0, -50%);
+  	animation: fadeIn 0.25s ease-in-out;
+  	background: var(--bg-color);
+  	width: 63%;
+  	height: 40px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#search {
+		width: 60%;
+	}
+}
+
 @media only screen and (max-width: 466px) {
+	#search {
+		width: 54%;
+	}
+
 	header .logo h1 {
 		font-size: 60px;
 		line-height: 40px;
@@ -935,12 +967,26 @@ i {
 }
 
 @media only screen and (max-width: 400px) {
+	#search {
+		width: 64%;
+		height: 65px;
+		left: 20px;
+	}
+
 	.crumbs {
 		top: 116px;
 	}
 }
 
 @media only screen and (max-width: 350px) {
+	#search {
+		left: 50%;
+		top: 100px;
+		height: 40px;
+		max-width: 100%;
+  	transform: translate(-50%, 0);
+	}
+
 	.popup {
 		width: 100%;
 	}
