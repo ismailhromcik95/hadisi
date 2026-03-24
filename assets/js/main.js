@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", async () => {
+
+  function countWords(text) {
+    return text.trim().split(/\s+/).filter(word => word.length > 0).length;
+  }
+
+  function hasMultipleBTags(prevod) {
+    if (!prevod) return false;
+    const bTagMatches = prevod.match(/<b>(.*?)<\/b>/gi);
+    return bTagMatches && bTagMatches.length > 1;
+  }
+
   const container = document.querySelector(".hadis-dana");
   if (!container) return;
 
@@ -15,22 +26,26 @@ document.addEventListener("DOMContentLoaded", async () => {
       const response = await fetch("hadith.json");
       const data = await response.json();
 
-      const sahihHadiths = data.filter(h => {
-        if (h.ocjena.toLowerCase() !== "sahih") return false;
+    const sahihHadiths = data.filter(h => {
+      if (h.ocjena.toLowerCase() !== "sahih") return false;
 
-        const bMatch = h.prevod?.match(/<b>(.*?)<\/b>/i);
-        const text = bMatch ? bMatch[1] : "";
+      if (hasMultipleBTags(h.prevod)) return false;
 
-        if (text.length > 100) return false;
+      const bMatch = h.prevod?.match(/<b>(.*?)<\/b>/i);
+      const text = bMatch ? bMatch[1] : "";
+      
+      if (!text || text.length === 0) return false;
 
-        const broj = h.broj?.toString().trim();
+      if (text.length > 100) return false;
 
-        const validBroj = /^\d+a?$/.test(broj);
+      if (countWords(text) < 3) return false;
 
-        if (!validBroj) return false;
+      const broj = h.broj?.toString().trim();
+      const validBroj = /^\d+a?$/.test(broj);
+      if (!validBroj) return false;
 
-        return true;
-      });
+      return true;
+    });
 
       if (sahihHadiths.length === 0) {
         container.innerHTML = "<p>Vjerodostojni hadis nije dostupan.</p>";
