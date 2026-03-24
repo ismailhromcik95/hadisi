@@ -2,11 +2,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const searchBtn = document.querySelector('.search svg');
   const searchBar = document.getElementById('search');
+  const searchContainer = document.querySelector('.search');
 
   searchBtn.addEventListener('click', () => {
-    searchBar.classList.toggle('hidden');
-    searchBar.focus();
-  })
+    const isHidden = searchBar.classList.contains('hidden');
+    
+    if (isHidden) {
+      searchBar.classList.remove('hidden');
+      searchBar.focus();
+    } else {
+      const query = searchBar.value.trim();
+      if (query) {
+        window.location.href = `https://ismailhromcik95.github.io/hadisi/hadis.html?search=${encodeURIComponent(query)}`;
+      } else {
+        searchBar.classList.add('hidden');
+      }
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!searchBar.classList.contains('hidden')) {
+      if (!searchContainer || !searchContainer.contains(e.target)) {
+        searchBar.classList.add('hidden');
+      }
+    }
+  });
 
   const settings = document.querySelector('.settings');
   const popup = document.querySelector('.popup');
