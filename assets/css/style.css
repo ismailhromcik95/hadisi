@@ -837,6 +837,11 @@ footer p {
 	font-size: var(--mini-font-size) !important;
 }
 
+.spaces {
+	margin: 0 7px;
+	font-family: 'IBM Plex Sans Arabic', serif;
+}
+
 b {
 	font-weight: bold;
 }
