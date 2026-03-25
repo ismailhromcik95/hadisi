@@ -658,6 +658,7 @@ main .o_nama, main .bio {
 
 main .bio {
 	max-width: 900px;
+	margin: 0 40px;
 }
 
 main .o_nama h2 {
@@ -875,6 +876,10 @@ i {
 
 	main .hadith {
 		margin: 20px 10px;
+	}
+
+	main .hadis-dana .hadith {
+		margin: 20px;
 	}
 
 	main .hadith-text {
