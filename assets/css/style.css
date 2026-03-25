@@ -652,13 +652,12 @@ main .o_nama, main .bio {
 	line-height: 20px;
 	font-size: var(--bigger-font-size);
 	text-align: justify;
-	margin: 0 50px;
+	margin: 0 30px;
 	margin-bottom: 20px;
 }
 
 main .bio {
 	max-width: 900px;
-	margin: 0 40px;
 }
 
 main .o_nama h2 {
@@ -968,7 +967,7 @@ i {
 	}
 
 	main .o_nama {
-		margin: 10px 40px;
+		margin: 10px 30px;
 	}
 
 	main {
