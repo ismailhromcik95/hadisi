@@ -8,10 +8,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   const hadithCont = document.querySelector(".hadith-cont");
 
   const zbirkaNames = {
+    "40nevevi": "Četrdeset Nevevijevih Hadisa",
     buhari: "Sahih Buhari",
     muslim: "Sahih Muslim",
-    "40nevevi": "Četrdeset Nevevijevih Hadisa",
     tirmizi: "Tirmizijina Zbirka Hadisa"
+  };
+
+  const customZbirkaLinks = {
+    "40nevevi": "zbirke/40nevevi.html",
+    buhari: "zbirke/buhari.html"
+    // muslim: "zbirke/muslim.html",
+    // tirmizi: "zbirke/tirmizi.html"
   };
 
   const glavaNames = {
@@ -48,6 +55,36 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   };
 
+  const chapterInfo = {
+    buhari: {
+      objava: {
+        title: `Početak objave — <span class='arapski'>كتاب بدء الوحى</span>`,
+        description: `
+        <div class="hadith">
+          <div class="hadith-text">
+            <div class="arapski">
+              <p>قَالَ الشَّيْخُ الْإِمَامُ الْحَافِظُ أَبُو عَبْدِ اللَّهِ مُحَمَّدُ بْنُ إِسْمَاعِيلَ بْنِ إِبْرَاهِيمَ بْنِ الْمُغِيرَةِ الْبُخَارِيُّ رَحِمَهُ اللَّهُ تَعَالَى آمِينَ.</p>
+              <p>كَيْفَ كَانَ بَدْءُ الْوَحْيِ إِلَى رَسُولِ اللَّهِ <span class="saws">ﷺ</span></p>
+              <p>وَقَوْلِ اللَّهِ جَلَّ ذِكْرُهُ</p>
+              <p class="quran" title="النساء 163" style="cursor:help;">﴿إِنَّا أَوْحَيْنَا إِلَيْكَ كَمَا أَوْحَيْنَا إِلَىٰ نُوحٍ وَالنَّبِيِّينَ مِنْ بَعْدِهِ﴾.</p>
+            </div>
+            <div class="prevod">
+              <p>Kapacitet, prvak i hafiz hadisa Ebu-Abdullah Muhammed b. Ismail b. Ibrahim b. Mugire iz Buhare - Uzvišeni mu se Allah smilovao, Amin!<br>— rekao je:</p>
+              <p style="text-align:center;margin-top:5px;margin-bottom:10px;">KAKO JE POČELA (SILAZITI) OBJAVA ALLAHOVOM POSLANIKU, SALLALLAHU ALEJHI VE SELLEM</p>
+              <p title="En-Nisa 163" style="cursor:help;">i govor Uzvišenog Allaha: <b>"Mi smo ti poslali Objavu kao što smo slali Nuhu i ostalim vjerovjesnicima iza njega."</b></p>
+            </div>
+          </div>
+        </div>
+
+          `
+      // },
+      // iman: {
+      //   title: "Iman - vjerovanje",
+      //   description: "Vaša custom description here..."
+      }
+    }
+  };
+
   function formatGlavaName(zbirka, glava) {
     if (!glava) return "";
 
@@ -56,6 +93,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const formatted = glava.replace(/_/g, " ");
     return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+  }
+
+  function addChapterInfo(zbirka, glava) {
+    const info = chapterInfo[zbirka]?.[glava];
+    if (!info) return null;
+
+    const container = document.createElement("div");
+    container.className = "chapter-info";
+
+    const title = document.createElement("h2");
+    title.className = "chapter-title";
+    title.innerHTML = info.title;
+
+    const description = document.createElement("div");
+    description.className = "chapter-description";
+    description.innerHTML = info.description;
+
+    container.appendChild(title);
+    container.appendChild(description);
+
+    return container;
   }
 
   const params = new URLSearchParams(window.location.search);
@@ -214,12 +272,26 @@ try {
       glavaKey = broj;
     }
 
+    if (glavaKey && !showAll && !/^\d+[a-z]?$/i.test(broj)) {
+      const chapterInfoDiv = addChapterInfo(zbirkaKey, glavaKey);
+      if (chapterInfoDiv) {
+        hadithCont.before(chapterInfoDiv);
+      }
+    }
+
     const crumbs = document.createElement("p");
     crumbs.className = "crumbs";
 
     const zbirkaLink = document.createElement("a");
     zbirkaLink.className = "zbirka";
-    zbirkaLink.href = `hadis.html?${zbirkaKey}`;
+    
+    const customLink = customZbirkaLinks[zbirkaKey];
+    if (customLink) {
+      zbirkaLink.href = customLink;
+    } else {
+      zbirkaLink.href = `hadis.html?${zbirkaKey}`;
+    }
+    
     zbirkaLink.textContent = zbirkaTitle;
 
     crumbs.appendChild(zbirkaLink);
@@ -259,13 +331,10 @@ try {
       const zbirkaTitle = zbirkaNames[firstHadith.zbirka.toLowerCase()] || firstHadith.zbirka;
       
       if (showAll) {
-        // Full collection view
         document.title = `${zbirkaTitle}`;
       } else if (matchedHadiths.length === 1) {
-        // Single hadith
         document.title = `${zbirkaTitle} ${firstHadith.broj}`;
       } else {
-        // Chapter view
         document.title = `${zbirkaTitle} - ${matchedHadiths.length} hadisa (poglavlje: ${broj})`;
       }
     }
