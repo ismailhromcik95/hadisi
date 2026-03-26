@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const hadithCont = document.querySelector(".hadith-cont");
 
   try {
-    const response = await fetch("hadith.json");
+    const response = await fetch("/hadith.json");
     const data = await response.json();
 
     const entries = data.filter(h => h.zbirka.toLowerCase() === "40nevevi");
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       brojCont.className = "broj-cont";
 
       brojCont.innerHTML = `
-        <a href="hadis.html?40nevevi=${hadith.broj}">
+        <a href="../hadis.html?40nevevi=${hadith.broj}">
           <p class="broj1">
             Četrdeset Nevevijevih Hadisa <span class="broj">${hadith.broj}</span>
           </p>
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const zbirkaParam = hadith.zbirka.toLowerCase();
-    const link = `https://ismailhromcik95.github.io/hadisi/hadis.html?${zbirkaParam}=${hadith.broj}`;
+    const link = `../hadis.html?${zbirkaParam}=${hadith.broj}`;
     text += link;
 
     navigator.clipboard.writeText(text)
