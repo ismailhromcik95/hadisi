@@ -566,10 +566,14 @@ main .hadith:last-child {
   padding-bottom: 0;
 }
 
-main .chapter-description .hadith {
+main .chapter-description .hadith, main .hadith.divider {
 	border-bottom: 1px solid #333;
 	padding-top: 0;
 	padding-bottom: 40px;
+}
+
+main .hadith.divider.title {
+	padding-bottom: 10px;
 }
 
 main .hadis-dana .hadith {
