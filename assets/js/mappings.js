@@ -265,8 +265,8 @@ const chapterDividers = {
           <div class="hadith-text">
             <div class="arapski">
               <p style="text-align:center;margin-top:5px;margin-bottom:10px;">باب قَوْلِ النَّبِيِّ <span class="saws">ﷺ</span> أَنَا أَعْلَمُكُمْ بِاللَّهِ</p>
-              <p>وَأَنَّ الْمَعْرِفَةَ فِعْلُ الْقَلْبِ لِقَوْلِ اللَّهِ تَعَالَى</p>
-              <p class="quran" title="البقرة 225" style="cursor:help;">{وَلَكِنْ يُؤَاخِذُكُمْ بِمَا كَسَبَتْ قُلُوبُكُمْ}</p>
+              <p class="quran" title="البقرة 225" style="cursor:help;"><span class="spaces">وَأَنَّ الْمَعْرِفَةَ فِعْلُ الْقَلْبِ لِقَوْلِ اللَّهِ تَعَالَى</span>
+              {وَلَكِنْ يُؤَاخِذُكُمْ بِمَا كَسَبَتْ قُلُوبُكُمْ}</p>
             </div>
             <div class="prevod">
               <p style="text-align:center;margin-top:5px;margin-bottom:10px;">O IZJAVI VJEROVJESNIKA, SALLALLAHU ALEJHl VE SELLEM: "JA SAM MEĐU VAMA NAJZNANIJI O ALLAHU" I O TOME DA JE SPOZNAJA ALLAHA AKT SRCA (UMA I RAZUMA)</p>
