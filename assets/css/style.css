@@ -955,6 +955,15 @@ i {
 	#random {
 		margin-top: 50px;
 	}
+
+	main .hadith.divider.title {
+		padding: 0;
+	}
+
+	main .hadith.divider.title .hadith-text {
+		margin: 20px 0;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
