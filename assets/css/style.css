@@ -193,6 +193,17 @@ a, h1 {
 	color: var(--link-color);
 }
 
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
 header {
 	padding: 30px 70px;
 	display: flex;
@@ -267,12 +278,16 @@ main svg.random-icon {
 	left: 14px;
 }
 
-header path, .info path, .random-icon path {
+header path, .info path {
 	fill: var(--link-color);
 }
 
 header .logo:hover path, .info:hover path, #random:hover .random-icon path {
 	fill: var(--title-color);
+}
+
+.random-icon path {
+	fill: var(--element-txt);
 }
 
 header .logo:hover h1 {
@@ -359,7 +374,7 @@ h2 .arapski {
 	font-size: var(--bigger-font-size);
 	gap: 10px;
 	padding: 20px;
-	z-index: 100;
+	z-index: 200;
 	scrollbar-color: var(--link-color) var(--bg-color);
 }
 
@@ -551,6 +566,12 @@ main .hadith:last-child {
   padding-bottom: 0;
 }
 
+main .chapter-description .hadith {
+	border-bottom: 1px solid #333;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+
 main .hadis-dana .hadith {
 	width: 500px;
 	margin-top: 10px;
@@ -696,6 +717,23 @@ main .bio > h4:first-child {
 main .bio .arapski {
 	width: 100%;
 	margin: 15px 0;
+}
+
+main .bio.buhari p {
+	margin-bottom: 15px;
+}
+
+main .glave {
+	font-size: var(--arabic-font-size);
+	margin: 10px 0;
+}
+
+main .glave li {
+	margin-bottom: 10px;
+}
+
+.chapter-title {
+	margin-bottom: 20px;
 }
 
 .ajet {
@@ -886,12 +924,24 @@ i {
 		margin-top: 30px;
 	}
 
+	main .chapter-description .hadith-text {
+		margin-top: 0;
+	}
+
+	main .chapter-description .hadith {
+		padding-top: 5px;
+	}
+
 	main .arapski, main .prevod {
 		width: 90%;
 	}
 
 	main .ocjene p {
 		margin: 10px 0;
+	}
+
+	main .chapter-title {
+		margin-top: 15px;
 	}
 
 	.hadis-dana-cont {
@@ -983,7 +1033,7 @@ i {
 	}
 
 	.crumbs {
-		top: 116px;
+		top: 115.5px;
 	}
 }
 
