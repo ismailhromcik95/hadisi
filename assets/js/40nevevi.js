@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const hadithCont = document.querySelector(".hadith-cont");
 
   try {
-    const response = await fetch("/hadith.json");
+    const response = await fetch("../hadith.json");
     const data = await response.json();
 
     const entries = data.filter(h => h.zbirka.toLowerCase() === "40nevevi");
