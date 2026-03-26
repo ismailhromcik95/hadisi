@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               <p>- Ibni-Omer: "Čovjek ne postiže suštinu i bit bogobojaznosti dok ne napusti ono što ga tišti u grudima."</p>
               <p>- <span title="Eš-Šura 13" style="cursor:help;">Mudžahid: <b>"On vam propisuje u vjeri ..."</b>, znače: "Naredio sam tebi, Muhammede, i njemu (Nuhu) jednu vjeru"</span>, <span title="El-Ma'ide 48" style="cursor:help;">a Ibnu-Abbas je za riječi: <b>(šir'aten ve minhadžen)</b> (zakon i pravac) kazao da znače: "Put i sunnet (propisan muslimanima)."</span></p>
               <p style="text-align:center;margin-top:5px;margin-bottom:10px;">VAŠA MOLITVA (DOVA), VAŠE JE VJEROVANJE</p>
-              <p title="El-Furkan 77" style="cursor:help;">Osnova ovome su riječi Uzvišenog: <b>"Reci: Allah vam ne bi poklonio pažnju da nije vaše dove."</b> Riječ ed-du'a (dova) u jeziku znači iman (vjerovanje)</p>
+              <p title="El-Furkan 77" style="cursor:help;">Osnova ovome su riječi Uzvišenog: <b>"Reci: Allah vam ne bi poklonio pažnju da nije vaše dove."</b> Riječ ed-du'a (dova) u jeziku znači iman (vjerovanje).</p>
             </div>
           </div>
         </div>
