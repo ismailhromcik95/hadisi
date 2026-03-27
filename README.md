@@ -4,4 +4,4 @@ Open-source web-sajt i aplikacija sa hadisima Allahovog Poslanika ﷺ na bosansk
 
 Web-sajt: https://ismailhromcik95.github.io/hadisi
 
-Aplikacija: https://ismailhromcik95.github.io/hadisi/app/hadisi_v2-0_25-3-2026.apk
+Aplikacija: https://ismailhromcik95.github.io/hadisi/app/hadisi_v3-0_27-3-2026.apk
