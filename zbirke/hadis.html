@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <title>Preusmjeravanje...</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/ico" href="../favicon.ico">
+  </head>
+  <body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        let redirectUrl = "../hadis.html";
+        if (params.toString()) {
+            redirectUrl += "?" + params.toString();
+        }
+        window.location.href = redirectUrl;
+    </script>
+  </body>
+</html>
