@@ -4,6 +4,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     return text.trim().split(/\s+/).filter(word => word.length > 0).length;
   }
 
+  function normalizeHadithText(text) {
+    if (!text) return "";
+
+    text = text.trim();
+    text = text.replace(/^[\"'„“”‘’]+/, "");
+    text = text.replace(/[\"'„“”‘’]+$/, "");
+    text = text.trim();
+    text = text.replace(/([!?…])\.+$/, "$1");
+
+    if (!/[.!?…]$/.test(text)) {
+      text += ".";
+    }
+
+    return text;
+  }
+
   const container = document.querySelector(".hadis-dana");
   if (!container) return;
 
@@ -73,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let prevodDisplay = hadith.prevod;
   const bMatch = hadith.prevod.match(/<b>([\s\S]*?)<\/b>/i);
   if (bMatch) {
-    prevodDisplay = bMatch[1].trim();
+    prevodDisplay = normalizeHadithText(bMatch[1]);
   }
 
   wrapper.innerHTML = `
@@ -81,7 +97,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       <div class="prevod">
         <!-- <p>Poslanik <span class="saws">ﷺ</span> je rekao:</p> -->
         <div class="arapski hidden"><p>${hadith.arapski}</p></div>
-        <p>"${prevodDisplay}."</p>
+        <p>"${prevodDisplay}"</p>
       </div>
     </div>
     <div class="bottom">
