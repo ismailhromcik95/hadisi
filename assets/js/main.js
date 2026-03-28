@@ -4,12 +4,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     return text.trim().split(/\s+/).filter(word => word.length > 0).length;
   }
 
-  function hasMultipleBTags(prevod) {
-    if (!prevod) return false;
-    const bTagMatches = prevod.match(/<b>(.*?)<\/b>/gi);
-    return bTagMatches && bTagMatches.length > 1;
-  }
-
   const container = document.querySelector(".hadis-dana");
   if (!container) return;
 
@@ -29,10 +23,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     const sahihHadiths = data.filter(h => {
       if (h.ocjena.toLowerCase() !== "sahih") return false;
 
-      if (hasMultipleBTags(h.prevod)) return false;
+      const bTags = h.prevod?.match(/<b>([\s\S]*?)<\/b>/gi) || [];
 
-      const bMatch = h.prevod?.match(/<b>(.*?)<\/b>/i);
-      const text = bMatch ? bMatch[1] : "";
+      if (bTags.length !== 1) return false;
+
+      const bMatch = h.prevod?.match(/<b>([\s\S]*?)<\/b>/i);
+      const text = bMatch ? bMatch[1].trim() : "";
       
       if (!text || text.length === 0) return false;
 
@@ -75,9 +71,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const zbirkaTitle = zbirkaNames[hadith.zbirka.toLowerCase()] || hadith.zbirka;
 
   let prevodDisplay = hadith.prevod;
-  const bMatch = hadith.prevod.match(/<b>(.*?)<\/b>/i);
+  const bMatch = hadith.prevod.match(/<b>([\s\S]*?)<\/b>/i);
   if (bMatch) {
-    prevodDisplay = bMatch[1];
+    prevodDisplay = bMatch[1].trim();
   }
 
   wrapper.innerHTML = `
