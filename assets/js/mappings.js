@@ -620,7 +620,7 @@ const chapterDividers = {
             <div class="arapski">
               <p style="text-align:center;margin-top:5px;margin-bottom:10px;">بَابُ سُؤَالِ جِبْرِيلَ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنِ الإِيمَانِ وَالإِسْلاَمِ وَالإِحْسَانِ وَعِلْمِ السَّاعَةِ</p>
               <p>وَبَيَانِ النَّبِيِّ <span class="saws">ﷺ</span> لَهُ ثُمَّ قَالَ جَاءَ جِبْرِيلُ عَلَيْهِ السَّلاَمُ يُعَلِّمُكُمْ دِينَكُمْ. فَجَعَلَ ذَلِكَ كُلَّهُ دِينًا، وَمَا بَيَّنَ النَّبِيُّ <span class="saws">ﷺ</span> لِوَفْدِ عَبْدِ الْقَيْسِ مِنَ الإِيمَانِ، وَقَوْلِهِ تَعَالَى</p>
-              <p class="quran" title="آل عمران 85" style="cursor:help;>{وَمَنْ يَبْتَغِ غَيْرَ الإِسْلاَمِ دِينًا فَلَنْ يُقْبَلَ مِنْهُ}.</p>
+              <p class="quran" title="آل عمران 85" style="cursor:help;">{وَمَنْ يَبْتَغِ غَيْرَ الإِسْلاَمِ دِينًا فَلَنْ يُقْبَلَ مِنْهُ}.</p>
             </div>
             <div class="prevod">
               <p style="text-align:center;margin-top:5px;margin-bottom:10px;">DŽIBRILOVO PITANJE VJEROVJESNIKU, SALLALLAHU ALEJHI VE SELLEM, O IMANU, ISLAMU, IHSANU I SUDNJEM DANU</p>
