@@ -1043,7 +1043,8 @@ i {
 		margin: 10px 0;
 	}
 
-	main .chapter-title {
+	main .chapter-title,
+	main.uvod-cont h2 {
 		margin-top: 15px;
 	}
 
