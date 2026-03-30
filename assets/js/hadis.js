@@ -53,16 +53,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     showAll = (broj === "");
   }
 
-  if (
-    zbirka === "muslim" &&
-    broj &&
-    !isNaN(broj) &&
-    Number(broj) >= 1 &&
-    Number(broj) <= 7
-  ) {
-    window.location.href = "zbirke/muslim/uvod.html";
-    return;
-  }
+  
+if (
+  zbirka === "muslim" &&
+  (
+    broj === "uvod" ||
+    (
+      broj &&
+      !isNaN(broj) &&
+      Number(broj) >= 1 &&
+      Number(broj) <= 7
+    )
+  )
+) {
+  window.location.href = "zbirke/muslim/uvod.html";
+  return;
+}
 
 try {
   const response = await fetch("hadith.json");
