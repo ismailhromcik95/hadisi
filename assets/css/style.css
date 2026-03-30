@@ -191,6 +191,10 @@ body {
 	font-size: var(--base-font-size);
 }
 
+button {
+	font-family: 'Josefin Sans', serif;
+}
+
 a, h1 {
 	color: var(--link-color);
 }
@@ -277,8 +281,9 @@ main svg.random-icon {
 	width: 13px;
 	height: 13px;
 	position: absolute;
-	top: 9.5px;
+	top: 50%;
 	left: 14px;
+	transform: translate(0, -50%);
 }
 
 header path, .info path {
@@ -458,6 +463,12 @@ h2 .arapski {
 	opacity: 0.85;
 }
 
+#reset {
+	font-size: var(--bigger-font-size);
+	padding-top: 7px;
+	padding-bottom: 4px;
+}
+
 #install {
 	margin-bottom: 10px;
 	display: none;
@@ -465,9 +476,10 @@ h2 .arapski {
 
 #random {
 	margin-top: 70px;
-	font-size: var(--base-font-size);
+	font-size: var(--bigger-font-size);
 	position: relative;
 	padding-left: 35px;
+	padding-top: 6px;
 }
 
 #random .emoji {
