@@ -7,7 +7,8 @@ const zbirkaNames = {
 
 const customZbirkaLinks = {
   "40nevevi": "zbirke/40nevevi.html",
-  buhari: "zbirke/buhari.html"
+  buhari: "zbirke/buhari.html",
+  muslim: "zbirke/muslim.html"
 };
 
 const glavaNames = {
