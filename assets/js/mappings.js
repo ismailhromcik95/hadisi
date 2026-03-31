@@ -13,36 +13,37 @@ const customZbirkaLinks = {
 
 const glavaNames = {
   buhari: {
-    objava: "Početak objave",
-    iman: "Vjerovanje",
-    stvaranje: "Početak stvaranja",
-    izmirivanje: "Izmirivanje (mirenje) ljudi",
-    pridrzavanje: "Pridržavanje za Kur'an i Sunnet",
-    odsteta: "Odšteta za krvne delikte",
-    edeb: "Etika (edeb)",
-    poslanici: "Kazivanja o Vjerovjesnicima",
-    dzihad: "Džihad i vojni pohodi",
-    tefsir: "Tumačenje Kur'ana",
-    rikak: "Ono što raznježuje srca (rikak)",
-    ensarije: "Vrline ensarija"
+    objava: "Početak objave", //knjiga 1
+    iman: "Vjerovanje", //knjiga 2
+    dzenaza: "Dženaza", //knjiga 23
+    izmirivanje: "Izmirivanje (mirenje) ljudi", //knjiga 53
+    dzihad: "Džihad i vojni pohodi", //knjiga 56
+    stvaranje: "Početak stvaranja", //knjiga 59
+    vjerovjesnici: "Kazivanja o Vjerovjesnicima", //knjiga 60
+    tefsir: "Tumačenje Kur'ana", //knjiga 65
+    edeb: "Etika (edeb)", //knjiga 78
+    rikak: "Ono što raznježuje srca (rikak)", //knjiga 81
+    odsteta: "Odšteta za krvne delikte", //knjiga 87
+    pridrzavanje: "Pridržavanje za Kur'an i Sunnet" //knjiga 96
   },
   muslim: {
-    iman: "Iman - vjerovanje",
-    kader: "Kader - određenje",
-    sudstvo: "Sudstvo i svjedočenja",
-    napolicarstvo: "Muzare'a - napoličarstvo",
-    hadz: "Hadždž",
-    zekat: "Zekjat",
-    odmazda: "Zabrana oduzimanja života, odmazda i krvarina",
-    lov: "Lov i klanje životinja",
-    dobrocinstvo: "Dobročinstvo i rodbinske veze",
-    taharet: "Taharet - Čistoća"
+    iman: "Iman - vjerovanje", //knjiga 1
+    taharet: "Taharet - Čistoća", //knjiga 2
+    zekat: "Zekjat", //knjiga 12
+    hadz: "Hadždž", //knjiga 15
+    napolicarstvo: "Muzare'a - napoličarstvo", //knjiga 22
+    odmazda: "Zabrana oduzimanja života, odmazda i krvarina", //knjiga 28
+    sudstvo: "Sudstvo i svjedočenja", //knjiga 30
+    lov: "Lov i klanje životinja", //knjiga 34
+    dobrocinstvo: "Dobročinstvo i rodbinske veze", //knjiga 45
+    kader: "Kader - određenje", //knjiga 46
+    zuhd: "Zuhd i suptilnost" //knjiga 55
   },
   tirmizi: {
-    sudnji_dan: "Opis Sudnjeg dana",
-    zuhd: "Pobožnost (zuhd)",
-    dobrocinstvo: "Dobročinstvo i održavanje rodbinskih veza",
-    iman: "Vjerovanje (iman)"
+    dobrocinstvo: "Dobročinstvo i održavanje rodbinskih veza", //knjiga 27
+    zuhd: "Pobožnost (zuhd)", //knjiga 36
+    sudnji_dan: "Opis Sudnjeg dana", //knjiga 37
+    iman: "Vjerovanje (iman)" //knjiga 40
   }
 };
 
