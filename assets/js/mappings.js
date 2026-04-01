@@ -2,7 +2,8 @@ const zbirkaNames = {
   "40nevevi": "Četrdeset Nevevijevih Hadisa",
   buhari: "Sahih Buhari",
   muslim: "Sahih Muslim",
-  tirmizi: "Tirmizijina Zbirka Hadisa"
+  tirmizi: "Tirmizijina zbirka hadisa",
+  "ebu_davud": "Ebu Davudova zbirka hadisa"
 };
 
 const customZbirkaLinks = {
