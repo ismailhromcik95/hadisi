@@ -234,7 +234,8 @@ footer a,
 .prevod a:hover,
 main h4 a:hover,
 main .bio a:hover,
-h5 a {
+h5 a,
+main .sahih a:hover {
 	text-decoration: none;
 }
 
@@ -698,6 +699,10 @@ main .sahih .ocjene, main .hasen .ocjene, main .daif .ocjene {
 	color: var(--txt-color);
 }
 
+main .sahih a {
+	color: var(--sahih);
+}
+
 main .bottom {
 	display: flex;
 	justify-content: space-between;
@@ -784,7 +789,7 @@ main .bio .arapski {
 	margin: 15px 0;
 }
 
-main .bio.buhari p, main .bio.muslim p {
+main .bio.buhari p, main .bio.muslim p, main .bio.muslim li {
 	margin-bottom: 15px;
 }
 
@@ -845,6 +850,10 @@ main .search-right select:has(option:checked[value="hasen"]) {
 
 main .search-right select:has(option:checked[value="daif"]) {
   color: var(--daif);
+}
+
+main .nested {
+	margin-top: 10px;
 }
 
 .chapter-title {
@@ -912,7 +921,7 @@ footer a:hover,
 .broj-cont a:hover,
 .popup a:hover,
 .toggle-label u,
-.ocjene a:hover,
+main .sahih .ocjene a:hover,
 .crumbs a:hover,
 h5 a:hover{
 	text-decoration: underline;
