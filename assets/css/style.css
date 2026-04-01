@@ -671,6 +671,11 @@ main .hadis-dana .prevod {
 	font-style: var(--prevod-style);
 }
 
+main .prevod b i,
+main .prevod i b {
+	font-style: italic;
+}
+
 main .hadis-dana .prevod {
 	font-weight: var(--prevod-weight);
 }
