@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   wrapper.innerHTML = `
     <div class="hadith-text">
       <div class="prevod">
-        <!-- <p>Poslanik <span class="saws">ﷺ</span> je rekao:</p> -->
+        <p>Poslanik <span class="saws">ﷺ</span> je rekao:</p>
         <div class="arapski hidden"><p>${hadith.arapski}</p></div>
         <p>"${prevodDisplay}"</p>
       </div>
