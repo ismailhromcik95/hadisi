@@ -53,6 +53,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     showAll = (broj === "");
   }
 
+function sortHadithBroj(a, b) {
+  const matchA = String(a.broj).match(/^(\d+)([a-z]*)$/i);
+  const matchB = String(b.broj).match(/^(\d+)([a-z]*)$/i);
+
+  const numA = matchA ? parseInt(matchA[1], 10) : 0;
+  const numB = matchB ? parseInt(matchB[1], 10) : 0;
+
+  if (numA !== numB) {
+    return numA - numB;
+  }
+
+  const letterA = matchA && matchA[2] ? matchA[2].toLowerCase() : "";
+  const letterB = matchB && matchB[2] ? matchB[2].toLowerCase() : "";
+
+  return letterA.localeCompare(letterB);
+}
+
   
 if (
   zbirka === "muslim" &&
@@ -157,11 +174,7 @@ try {
     if (showAll) {
       matchedHadiths = data
         .filter(h => h.zbirka.toLowerCase() === zbirka)
-        .sort((a, b) => {
-          const numA = parseFloat(a.broj);
-          const numB = parseFloat(b.broj);
-          return numA - numB;
-        });
+        .sort(sortHadithBroj);
       
       var isFullCollection = true;
       
@@ -172,7 +185,8 @@ try {
       matchedHadiths = data.filter(h =>
         h.zbirka.toLowerCase() === zbirka &&
         regex.test(String(h.broj))
-      );
+      )
+    .sort(sortHadithBroj);
 
     } else {
 
@@ -182,11 +196,7 @@ try {
           h.glava &&
           h.glava.toLowerCase() === broj.toLowerCase()
         )
-        .sort((a, b) => {
-          const numA = parseFloat(a.broj);
-          const numB = parseFloat(b.broj);
-          return numA - numB;
-        });
+        .sort(sortHadithBroj);
 
     }
   }
