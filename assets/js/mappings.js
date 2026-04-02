@@ -1,5 +1,6 @@
 const zbirkaNames = {
   "40nevevi": "Četrdeset Nevevijevih Hadisa",
+  "rijadus_salihin": "Rijadu-s-salihin",
   buhari: "Sahih Buhari",
   muslim: "Sahih Muslim",
   tirmizi: "Tirmizijina zbirka hadisa",
@@ -45,6 +46,9 @@ const glavaNames = {
     zuhd: "Pobožnost (zuhd)", //knjiga 36
     sudnji_dan: "Opis Sudnjeg dana", //knjiga 37
     iman: "Vjerovanje (iman)" //knjiga 40
+  },
+  rijadus_salihin: {
+    harami: "Zabranjena djela" //knjiga 17
   }
 };
 
