@@ -1182,10 +1182,6 @@ i {
 		font-size: var(--base-font-size);
 		line-height: 20px;
 	}
-
-	main .glave li {
-		margin-bottom: 5px;
-	}
 }
 
 @media only screen and (max-width: 466px) {
