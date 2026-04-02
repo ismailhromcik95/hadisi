@@ -210,7 +210,7 @@
   {
     "id": 17,
     "arapski": "عَنْ أُمِّ الْمُؤْمِنِينَ أُمِّ عَبْدِ اللَّهِ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا، قَالَتْ: قَالَ: رَسُولُ اللَّهِ صلى الله عليه و سلم \"مَنْ أَحْدَثَ فِي أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ<br>(رَوَاهُ الْبُخَارِيُّ وَمُسْلِمٌ). وَفِي رِوَايَةٍ لِمُسْلِمٍ:<br>مَنْ عَمِلَ عَمَلًا لَيْسَ عَلَيْهِ أَمْرُنَا فَهُوَ رَدٌّ\"",
-    "prevod": "Od Aiše, radijallahu anha, prenosi se da je rekla: „Allahov Poslanik, sallallahu alejhi ve\nsellem, je rekao: '<b>Ko uvede u ovu našu vjeru ono što nije od nje, to je odbačeno</b>.'“\n\n<!-- (Bilježe <a href=\"hadis.html?buhari=2697\">Buharija i Muslim</a>). -->\n(Bilježe <a href=\"http://localhost:8000/hadis.html?search=buhari%7Cmuslim%20%D9%85%D9%86%20%D8%A3%D8%AD%D8%AF%D8%AB%20%D9%81%D9%8A%20%D8%A3%D9%85%D8%B1%D9%86%D8%A7%20%D9%87%D8%B0%D8%A7%20%D9%84%D9%8A%D8%B3%20%D9%81%D9%87%D9%88%20%D8%B1%D8%AF%20-nevevi\">Buharija i Muslim</a>).\n\nA u predaji kod <a href=\"hadis.html?muslim=1718\">imama Muslima</a> stoji: „<b>Ko bude činio nešto što nije od naše vjere, bit će\n          mu odbijeno</b>.“",
+    "prevod": "Od Aiše, radijallahu anha, prenosi se da je rekla: „Allahov Poslanik, sallallahu alejhi ve\nsellem, je rekao: '<b>Ko uvede u ovu našu vjeru ono što nije od nje, to je odbačeno</b>.'“\n\n(Bilježe <a href=\"hadis.html?buhari=2697\">Buharija</a> i <a href=\"hadis.html?muslim=1718a\">Muslim</a>).\n\nA u predaji kod <a href=\"hadis.html?muslim=1718b\">imama Muslima</a> stoji: „<b>Ko bude činio nešto što nije od naše vjere, bit će\n          mu odbijeno</b>.“",
     "zbirka": "40nevevi",
     "broj": "5",
     "broj2": null,
@@ -678,7 +678,7 @@
   {
     "id": 53,
     "arapski": "حَدَّثَنَا أَحْمَدُ بْنُ حَنْبَلٍ، وَمُحَمَّدُ بْنُ الْمُثَنَّى، - وَاللَّفْظُ لأَحْمَدَ - قَالاَ حَدَّثَنَا عَبْدُ الرَّحْمَنِ، بْنُ مَهْدِيٍّ عَنْ سُفْيَانَ، عَنِ الأَعْمَشِ، عَنْ عَبْدِ اللَّهِ بْنِ مُرَّةَ، عَنْ مَسْرُوقٍ، عَنْ عَبْدِ اللَّهِ، قَالَ قَامَ فِينَا رَسُولُ اللَّهِ صلى الله عليه وسلم فَقَالَ ‏ \"‏ وَالَّذِي لاَ إِلَهَ غَيْرُهُ لاَ يَحِلُّ دَمُ رَجُلٍ مُسْلِمٍ يَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَنِّي رَسُولُ اللَّهِ إِلاَّ ثَلاَثَةُ نَفَرٍ التَّارِكُ الإِسْلاَمَ الْمُفَارِقُ لِلْجَمَاعَةِ أَوِ الْجَمَاعَةَ - شَكَّ فِيهِ أَحْمَدُ - وَالثَّيِّبُ الزَّانِي وَالنَّفْسُ بِالنَّفْسِ ‏\"‏ ‏.‏ قَالَ الأَعْمَشُ فَحَدَّثْتُ بِهِ، إِبْرَاهِيمَ فَحَدَّثَنِي عَنِ الأَسْوَدِ، عَنْ عَائِشَةَ، بِمِثْلِهِ ‏.‏",
-    "prevod": "Abdullah b. Mes'ud, <span class=\"arapski\">رضي  الله عنها</span>, prenosi:\n<br>Allahov Poslanik, <span class=\"saws\">ﷺ</span>, je ustao i rekao:\n<b>Tako mi Onoga koji je Jedini, nije dozvoljena krv čovjeka muslimana\nkoji svjedoči da nema boga osim Allaha i da sam ja Njegov Poslanik, osim u tri slučaja:\nkada se odmetne od islama i odvoji od zajednice</b> [ili \"<i>napusti zajednicu</i>\", Ahmed, jedan od prenosilaca, je u sumnji (koju od ove dvije fraze je upotrebio Poslanik <span class=\"saws\">ﷺ</span>)],\n<b>kada počini blud (a bude oženjen) i kada ubije čovjeka.\"</b>",
+    "prevod": "Abdullah b. Mes'ud, <span class=\"arapski\">رضي  الله عنها</span>, prenosi:\n<br>Allahov Poslanik, <span class=\"saws\">ﷺ</span>, je ustao i rekao:\n<b>Tako mi Onoga koji je Jedini, nije dozvoljena krv čovjeka muslimana\nkoji svjedoči da nema boga osim Allaha i da sam ja Njegov Poslanik, osim u tri slučaja:\nkada se odmetne od islama i odvoji od zajednice</b> [ili \"<i>napusti zajednicu</i>\", Ahmed, jedan od prenosilaca, je u sumnji (koju od ove dvije fraze je upotrebio Poslanik <span class=\"saws\">ﷺ</span>)],\n<b>kada počini blud (a bude oženjen) i kada ubije čovjeka.\"</b>\n<br>\n<i>[Slično ovome se prenosi i od Aiše, <span class=\"arapski\">رضي  الله عنها</span>]</i>",
     "zbirka": "muslim",
     "broj": "1676c",
     "broj2": "Knjiga 28, Hadis 36",
@@ -2546,5 +2546,44 @@
     "ocjena_tekst": "Sahih (Vjerodostojan) — Pogledaj ocjenu prethodnog hadisa",
     "ocjena_vise": null,
     "created_at": "2026-04-01 11:18:02"
+  },
+  {
+    "id": 197,
+    "arapski": "حَدَّثَنَا أَبُو جَعْفَرٍ، مُحَمَّدُ بْنُ الصَّبَّاحِ وَعَبْدُ اللَّهِ بْنُ عَوْنٍ الْهِلاَلِيُّ جَمِيعًا عَنْ إِبْرَاهِيمَ، بْنِ سَعْدٍ قَالَ ابْنُ الصَّبَّاحِ حَدَّثَنَا إِبْرَاهِيمُ بْنُ سَعْدِ بْنِ إِبْرَاهِيمَ بْنِ عَبْدِ الرَّحْمَنِ بْنِ عَوْفٍ، حَدَّثَنَا أَبِي، عَنِ الْقَاسِمِ بْنِ مُحَمَّدٍ، عَنْ عَائِشَةَ، قَالَتْ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم ‏ \"‏ مَنْ أَحْدَثَ فِي أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ\"‏‏.‏",
+    "prevod": "Aiša, <span class=\"arapski\">رضي  الله عنها</span>, prenosi da je Allahov Poslanik, <span class=\"saws\">ﷺ</span>, rekao: <b>Ko u ovu našu vjeru uvede ono što nije od nje, to se\nodbacuje.</b>\n<br><i>[pogledaj <a href=\"hadis.html?rijadus_salihin=169\">Rijadu-s-Salihin 169</a>]</i>",
+    "zbirka": "muslim",
+    "broj": "1718a",
+    "broj2": "Knjiga 30, Hadis 23",
+    "glava": "sudstvo",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — <span class=\"muttefekun\" title='Izraz \"muttefekun alejhi\" znači da su se oko vjerodostojnosti datog hadisa složili i Buharija i Muslim.'>Muttefekun 'alejhi</span>",
+    "ocjena_vise": null,
+    "created_at": "2026-04-02 06:39:13"
+  },
+  {
+    "id": 198,
+    "arapski": "عن عائشة، رضي الله عنها، قالت‏:‏ قال رسول الله صلى الله عليه وسلم‏:‏ ‏\"‏من أحدث في أمرنا هذا ما ليس منه فهو رد‏\"‏ ‏(‏‏(‏ متفق عليه‏)‏‏)‏‏.‏\n<br>\nوفي رواية لمسلم ‏:‏ ‏\"‏من عمل عملاً ليس عليه أمرنا فهو رد‏\"‏‏.‏",
+    "prevod": "Aiša, radijallahu anha, prenosi da je Allahov Poslanik, sallallahu alejhi\nve sellem, rekao: \"<b>Ko u ovu našu vjeru uvede ono što nije od nje, to se\nodbacuje.</b>” Muttefekun alejhi: <a href=\"hadis.html?buhari=2697\">Buhari, 2697</a>, i <a href=\"hadis.html?muslim=1718a\">Muslim, 1718</a>.\nU verziji koju bilježi <a href=\"hadis.html?muslim=1718b\">imam Muslim</a> navodi se: \"<b>Ko uradi kakvo djelo\nkoje nije u skladu sa našom vjerom, ono se odbacuje.</b>”",
+    "zbirka": "rijadus_salihin",
+    "broj": "169",
+    "broj2": "Uvod, Hadis 169",
+    "glava": "uvod",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — <span class=\"muttefekun\" title='Izraz \"muttefekun alejhi\" znači da su se oko vjerodostojnosti datog hadisa složili i Buharija i Muslim.'>Muttefekun 'alejhi</span>",
+    "ocjena_vise": null,
+    "created_at": "2026-04-02 06:44:05"
+  },
+  {
+    "id": 199,
+    "arapski": "وعن أبي هريرة رضي الله عنه أن النبي صلى الله عليه وسلم قال‏:‏ ‏ \"‏كفى بالمرء كذبًا أن يحدث بكل ما سمع‏\"‏‏.‏ (‏‏(‏رواه مسلم‏)‏‏)‏‏",
+    "prevod": "Ebu Hurejra, radijallahu anhu, prenosi da je Allahov Poslanik, sallallahu alejhi ve sellem, rekao: \"<b>Dovoljno je čovjeku laži da priča sve ono što\nčuje.</b>” Hadis bilježi <a href=\"hadis.html?muslim=5\">Muslim, 5</a>.",
+    "zbirka": "rijadus_salihin",
+    "broj": "1547",
+    "broj2": "Knjiga 17, Hadis 37",
+    "glava": "harami",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — Imam Muslim",
+    "ocjena_vise": null,
+    "created_at": "2026-04-02 06:53:30"
   }
 ]
