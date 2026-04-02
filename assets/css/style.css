@@ -545,7 +545,7 @@ h2 .arapski {
 
 .collections button {
 	margin: 10px;
-	padding: 10px;
+	padding: 10px 15px;
 	cursor: pointer;
 	border: 1px solid var(--link-color);
 	color: var(--element-txt);
@@ -800,7 +800,7 @@ main .bio.buhari p, main .bio.muslim p, main .bio.muslim li {
 
 main .glave {
 	font-size: var(--arabic-font-size);
-	margin: 10px 0;
+	margin: 10px 20px;
 }
 
 main .glave li {
@@ -1205,6 +1205,10 @@ i {
 	main .search-row {
 		gap: 15px;
 		line-height: 20px;
+	}
+
+	.collections button {
+		height: 60px;
 	}
 }
 
