@@ -1003,7 +1003,7 @@
   {
     "id": 78,
     "arapski": "حَدَّثَنِي عَبْدُ اللَّهِ بْنُ هَاشِمٍ الْعَبْدِيُّ، حَدَّثَنَا بَهْزٌ، حَدَّثَنَا سُلَيْمَانُ بْنُ الْمُغِيرَةِ، عَنْ ثَابِتٍ، قَالَ قَالَ أَنَسٌ كُنَّا نُهِينَا فِي الْقُرْآنِ أَنْ نَسْأَلَ رَسُولَ اللَّهِ صلى الله عليه وسلم عَنْ شَىْءٍ ‏.‏ وَسَاقَ الْحَدِيثَ بِمِثْلِهِ ‏.‏",
-    "prevod": "Prenosi Sabit, da je Enes, <span class=\"arapski\">رضي  الله عنها</span>,\nrekao: \"Zabranjeno nam je bilo u Kur'anu da pitamo\nAllahova Poslanika, <span class=\"saws\">ﷺ</span>, o bilo čemu.\", a ostatak hadisa je isti (kao i prethodni).",
+    "prevod": "Prenosi Sabit, da je Enes, <span class=\"arapski\">رضي  الله عنها</span>,\nrekao: \"Zabranjeno nam je bilo <i>[u Kur'anu]</i> da pitamo\nAllahova Poslanika, <span class=\"saws\">ﷺ</span>, o bilo čemu.\", a ostatak hadisa je isti (kao i prethodni).",
     "zbirka": "muslim",
     "broj": "12b",
     "broj2": "Knjiga 1, Hadis 11",
@@ -2767,5 +2767,44 @@
     "ocjena_tekst": "Sahih (Vjerodostojan) — <span class=\"muttefekun\" title='Izraz \"muttefekun alejhi\" znači da su se oko vjerodostojnosti datog hadisa složili i Buharija i Muslim.'>Muttefekun 'alejhi</span>",
     "ocjena_vise": null,
     "created_at": "2026-04-06 22:28:23"
+  },
+  {
+    "id": 214,
+    "arapski": "وَحَدَّثَنِي سَلَمَةُ بْنُ شَبِيبٍ، حَدَّثَنَا الْحَسَنُ بْنُ أَعْيَنَ، حَدَّثَنَا مَعْقِلٌ، - وَهُوَ ابْنُ عُبَيْدِ اللَّهِ - عَنْ أَبِي الزُّبَيْرِ، عَنْ جَابِرٍ، أَنَّ رَجُلاً، سَأَلَ رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ أَرَأَيْتَ إِذَا صَلَّيْتُ الصَّلَوَاتِ الْمَكْتُوبَاتِ وَصُمْتُ رَمَضَانَ وَأَحْلَلْتُ الْحَلاَلَ وَحَرَّمْتُ الْحَرَامَ وَلَمْ أَزِدْ عَلَى ذَلِكَ شَيْئًا أَأَدْخُلُ الْجَنَّةَ قَالَ ‏ \"‏ نَعَمْ ‏\"‏ ‏.‏ قَالَ وَاللَّهِ لاَ أَزِيدُ عَلَى ذَلِكَ شَيْئًا ‏.‏",
+    "prevod": "Džabir, <span class=\"arapski\">رضي  الله عنها</span>, prenosi da je neki čovjek pitao Allahovog Poslanika, <span class=\"saws\">ﷺ</span>: Kaži mi, ako budem samo klanjao propisane namaze, postio Ramazan, radio ono što je dozvoljeno a klonio se onog što je zabranjeno i ne budem ništa više od toga radio, da li ću ući u Džennet!? - <b>Da.</b> odgovori mu Allahov Poslanik, <span class=\"saws\">ﷺ</span>. Tada reče čovjek: Tako mi Allaha, neću ništa više na to dodavati!\n<br>\n<i>[pogledaj <a href=\"hadis.html?40nevevi=22\">40 Nevevijevih hadisa 22</a>]</i>",
+    "zbirka": "muslim",
+    "broj": "15c",
+    "broj2": "Knjiga 1, Hadis 18",
+    "glava": "iman",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — Imam Muslim",
+    "ocjena_vise": null,
+    "created_at": "2026-04-06 22:58:14"
+  },
+  {
+    "id": 215,
+    "arapski": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ - وَاللَّفْظُ لأَبِي كُرَيْبٍ - قَالاَ حَدَّثَنَا أَبُو مُعَاوِيَةَ، عَنِ الأَعْمَشِ، عَنْ أَبِي سُفْيَانَ، عَنْ جَابِرٍ، قَالَ أَتَى النَّبِيَّ صلى الله عليه وسلم النُّعْمَانُ بْنُ قَوْقَلٍ فَقَالَ يَا رَسُولَ اللَّهِ أَرَأَيْتَ إِذَا صَلَّيْتُ الْمَكْتُوبَةَ وَحَرَّمْتُ الْحَرَامَ وَأَحْلَلْتُ الْحَلاَلَ أَأَدْخُلُ الْجَنَّةَ فَقَالَ النَّبِيُّ صلى الله عليه وسلم ‏ \"‏ نَعَمْ ‏\"‏ ‏.‏",
+    "prevod": "Džabir, <span class=\"arapski\">رضي  الله عنها</span>, prenosi da je <i>[Nu'man b. Kavkal]</i> pitao Allahovog Poslanika, <span class=\"saws\">ﷺ</span>: Allahov Poslaniče, kaži mi, ako budem samo klanjao propisane namaze, radio ono što je dozvoljeno a klonio se onog što je zabranjeno i ne budem ništa više od toga radio, da li ću ući u Džennet!? Allahov Poslanik, <span class=\"saws\">ﷺ</span>, mu odgovori: <b>Da.</b>\n<br>\n<i>[pogledaj <a href=\"hadis.html?muslim=15c\">hadis br 15c</a>]</i>",
+    "zbirka": "muslim",
+    "broj": "15a",
+    "broj2": "Knjiga 1, Hadis 16",
+    "glava": "iman",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — Imam Muslim",
+    "ocjena_vise": null,
+    "created_at": "2026-04-06 23:03:32"
+  },
+  {
+    "id": 216,
+    "arapski": "وَحَدَّثَنِي حَجَّاجُ بْنُ الشَّاعِرِ، وَالْقَاسِمُ بْنُ زَكَرِيَّاءَ، قَالاَ حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ مُوسَى، عَنْ شَيْبَانَ، عَنِ الأَعْمَشِ، عَنْ أَبِي صَالِحٍ، وَأَبِي، سُفْيَانَ عَنْ جَابِرٍ، قَالَ قَالَ النُّعْمَانُ بْنُ قَوْقَلٍ يَا رَسُولَ اللَّهِ ‏.‏ بِمِثْلِهِ ‏.‏ وَزَادَ فِيهِ وَلَمْ أَزِدْ عَلَى ذَلِكَ شَيْئًا ‏.‏",
+    "prevod": "Slična predaja, koju također prenosi Džabir, <span class=\"arapski\">رضي  الله عنها</span>, s tim što se u njoj nalaze i riječi: \"Neću ništa više na to dodavati!\"",
+    "zbirka": "muslim",
+    "broj": "15b",
+    "broj2": "Knjiga 1, Hadis 17",
+    "glava": "iman",
+    "ocjena": "sahih",
+    "ocjena_tekst": "Sahih (Vjerodostojan) — Imam Muslim",
+    "ocjena_vise": null,
+    "created_at": "2026-04-06 23:08:26"
   }
 ]
