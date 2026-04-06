@@ -235,7 +235,8 @@ footer a,
 main h4 a:hover,
 main .bio a:hover,
 h5 a,
-main .sahih a:hover {
+main .sahih a:hover,
+main .prevod .link:hover {
 	text-decoration: none;
 }
 
@@ -680,6 +681,25 @@ main .hadis-dana .prevod {
 	font-weight: var(--prevod-weight);
 }
 
+main .prevod details>summary {
+  list-style: none;
+}
+
+main .prevod summary::-webkit-details-marker {
+  display: none
+}
+
+main .prevod details[open] summary:after {
+  content: " ▾";
+  cursor: pointer;
+}
+
+main .prevod .link {
+	color: var(--link-color);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 main .ocjena {
 	text-align: center;
 	margin: 50px;
@@ -928,7 +948,7 @@ footer a:hover,
 .toggle-label u,
 main .sahih .ocjene a:hover,
 .crumbs a:hover,
-h5 a:hover{
+h5 a:hover {
 	text-decoration: underline;
 }
 
