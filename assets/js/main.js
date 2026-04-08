@@ -176,4 +176,63 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
+  const posljednjeContainer = document.querySelector(".poslednje");
+
+  if (posljednjeContainer) {
+    try {
+      const response = await fetch("hadith.json");
+      const data = await response.json();
+
+      if (!Array.isArray(data) || data.length === 0) return;
+
+      const latest = data
+        .filter(item => item.created_at)
+        .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
+
+      if (!latest) return;
+
+      const dateObj = new Date(latest.created_at);
+      const formattedDate =
+        dateObj.getDate() + "." +
+        (dateObj.getMonth() + 1) + "." +
+        dateObj.getFullYear() + ".";
+
+      const link = `hadis.html?${latest.zbirka}=${latest.broj}`;
+
+      const zbirkaNaziv =
+        zbirkaNames?.[latest.zbirka.toLowerCase()] || latest.zbirka;
+
+      const p = document.createElement("p");
+
+      const text = document.createTextNode("Posljednje ubačen hadis: ");
+
+      const infoSpan = document.createElement("span");
+      infoSpan.className = "poslednje-info";
+
+      const linkEl = document.createElement("a");
+      linkEl.href = link;
+
+      const brojSpan = document.createElement("span");
+      brojSpan.className = "broj1";
+      brojSpan.textContent = `${zbirkaNaziv} ${latest.broj}`;
+
+      linkEl.appendChild(brojSpan);
+
+      const dateSpan = document.createElement("span");
+      dateSpan.className = "date";
+      dateSpan.textContent = ` (${formattedDate})`;
+
+      infoSpan.appendChild(linkEl);
+      infoSpan.appendChild(dateSpan);
+
+      p.appendChild(text);
+      p.appendChild(infoSpan);
+
+      posljednjeContainer.appendChild(p);
+
+    } catch (error) {
+      console.error("Greška pri učitavanju posljednjeg hadisa:", error);
+    }
+  }
+
 });
