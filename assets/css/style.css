@@ -881,6 +881,11 @@ main .nested {
 	margin-top: 10px;
 }
 
+main .poslednje {
+	margin: 50px 20px 30px 20px;
+	text-align: center;
+}
+
 .chapter-title {
 	margin-bottom: 20px;
 }
@@ -1263,6 +1268,11 @@ i {
 	main .drugi-jezici .search-right input {
 		min-width: unset;
 		width: 100%;
+	}
+
+	main .poslednje-info {
+		display: block;
+		margin-top: 5px;
 	}
 }
 
