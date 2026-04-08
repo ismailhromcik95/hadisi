@@ -1270,9 +1270,13 @@ i {
 		width: 100%;
 	}
 
+	main .poslednje {
+		margin-bottom: 25px;
+	}
+
 	main .poslednje-info {
 		display: block;
-		margin-top: 5px;
+		margin-top: 7.5px;
 	}
 }
 
