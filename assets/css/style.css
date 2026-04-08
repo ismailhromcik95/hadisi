@@ -886,7 +886,7 @@ main .poslednje {
 	text-align: center;
 }
 
-.chapter-title {
+.chapter-title:not(:has(.no-desc)) {
 	margin-bottom: 20px;
 }
 
