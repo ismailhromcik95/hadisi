@@ -134,6 +134,12 @@ const chapterInfo = {
 
         `
     }
+  },
+  muslim: {
+    iman: {
+      title: "Poglavlje o imanu - vjerovanju — <span class='arapski'>كتابُ الإيمانِ</span>",
+      description: ""
+    }
   }
 };
 
