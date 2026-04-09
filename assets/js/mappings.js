@@ -45,9 +45,11 @@ const glavaNames = {
     dobrocinstvo: "Dobročinstvo i održavanje rodbinskih veza", //knjiga 27
     zuhd: "Pobožnost (zuhd)", //knjiga 36
     sudnji_dan: "Opis Sudnjeg dana", //knjiga 37
-    iman: "Vjerovanje (iman)" //knjiga 40
+    iman: "Vjerovanje (iman)", //knjiga 40
+    vrijednosti: "Vrijednosti Kur'ana" //knjiga 45
   },
   rijadus_salihin: {
+    vrline: "Razne vrline, odlike i vrijednosti", //knjiga 8
     harami: "Zabranjena djela" //knjiga 17
   }
 };
