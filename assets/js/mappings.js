@@ -26,7 +26,8 @@ const glavaNames = {
     edeb: "Etika (edeb)", //knjiga 78
     rikak: "Ono što raznježuje srca (rikak)", //knjiga 81
     odsteta: "Odšteta za krvne delikte", //knjiga 87
-    pridrzavanje: "Pridržavanje za Kur'an i Sunnet" //knjiga 96
+    pridrzavanje: "Pridržavanje za Kur'an i Sunnet", //knjiga 96
+    tevhid: "Allahova jednota (tevhid)" //knjiga 97
   },
   muslim: {
     iman: "Iman - vjerovanje", //knjiga 1
