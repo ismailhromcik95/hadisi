@@ -22,6 +22,7 @@ const glavaNames = {
     dzihad: "Džihad i vojni pohodi", //knjiga 56
     stvaranje: "Početak stvaranja", //knjiga 59
     vjerovjesnici: "Kazivanja o Vjerovjesnicima", //knjiga 60
+    ensarije: "Vrline ensarija", //knjiga 63
     tefsir: "Tumačenje Kur'ana", //knjiga 65
     edeb: "Etika (edeb)", //knjiga 78
     rikak: "Ono što raznježuje srca (rikak)", //knjiga 81
